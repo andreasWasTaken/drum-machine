@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-white: #F2F2F2;
+    --clr-shade-light: #A6A6A6;
+    --clr-shade-medium: #727171;
+    --clr-shade-dark: #262626;
+    --clr-black: #0D0D0D;
+    --clr-accent: #E3821B;
+}
+/* Color Theme Swatches in RGBA */
+.Wilderness-1-rgba { color: rgba(242, 242, 242, 1); }
+.Wilderness-2-rgba { color: rgba(165, 165, 165, 1); }
+.Wilderness-3-rgba { color: rgba(89, 89, 89, 1); }
+.Wilderness-4-rgba { color: rgba(38, 38, 38, 1); }
+.Wilderness-5-rgba { color: rgba(12, 12, 12, 1); }
+/* Color Theme Swatches in HSLA */
+.Wilderness-1-hsla { color: hsla(0, 0, 95, 1); }
+.Wilderness-2-hsla { color: hsla(0, 0, 65, 1); }
+.Wilderness-3-hsla { color: hsla(0, 0, 35, 1); }
+.Wilderness-4-hsla { color: hsla(0, 0, 15, 1); }
+.Wilderness-5-hsla { color: hsla(0, 0, 5, 1); }
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--clr-shade-medium);
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Krona One', sans-serif;
+}
+
+/* Typography Start */
+p {
+    color: var(--clr-black);
+    margin: 0;
+}
+
+label {
+    display: inline-block;
+}
+
+input {
+    min-width: 250px;
+}
+/* Typography End */
+
+.app-container {
+    display: flex;
+    background: var(--clr-shade-light);
+    border: 6px solid var(--clr-accent);
+    padding: 2em;
+}
+
+.pads-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.pad {
+    margin: .4em;
+    padding: 2em;
+    background: var(--clr-shade-medium);
+}
+
+.controls-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 3em;
+}
+
+.control-power,
+.control-bank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.switch {
+    display: flex;
+    justify-content: flex-start;
+    background: var(--clr-black);
+    padding: 3px;
+    min-width: 60px;
+    height: 25px;
+}
+
+.switch-knob {
+    background-color: var(--clr-accent);
+    width: 19px;
+    height: 19px;
+}
+
+.controls-display {
+    background: var(--clr-shade-medium);
+    min-width: 250px;
+    min-height: 50px;
+}
