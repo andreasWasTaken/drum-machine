@@ -84,11 +84,21 @@ input {
 
 .switch {
     display: flex;
-    justify-content: flex-start;
     background: var(--clr-black);
     padding: 3px;
-    min-width: 60px;
+    width: 60px;
     height: 25px;
+    position: relative;
+}
+
+.switch-overlay {
+    position: absolute;
+    transform: translateY(21px);
+    background: blue;
+    width: 60px;
+    height: 25px;
+    z-index: 99;
+    background: none;
 }
 
 .switch-knob {
@@ -97,7 +107,9 @@ input {
     height: 19px;
 }
 
-.controls-display {
+.sample-display {
+    display: grid;
+    place-content: center;
     background: var(--clr-shade-medium);
     min-width: 250px;
     min-height: 50px;

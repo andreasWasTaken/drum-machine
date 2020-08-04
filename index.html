@@ -14,35 +14,52 @@
     <div class="app-container">
         <!-- Drum-Pads -->
         <div class="pads-container">
-            <div id="q" class="pad"><p>Q</p></div>
-            <div id="W" class="pad"><p>W</p></div>
-            <div id="E" class="pad"><p>E</p></div>
-            <div id="A" class="pad"><p>A</p></div>
-            <div id="S" class="pad"><p>S</p></div>
-            <div id="D" class="pad"><p>D</p></div>
-            <div id="Z" class="pad"><p>Z</p></div>
-            <div id="S" class="pad"><p>X</p></div>
-            <div id="D" class="pad"><p>C</p></div>
+            <div id="q" class="pad">Q</div>
+            <div id="w" class="pad">W</div>
+            <div id="e" class="pad">E</div>
+            <div id="a" class="pad">A</div>
+            <div id="s" class="pad">S</div>
+            <div id="d" class="pad">D</div>
+            <div id="y" class="pad">Y</div>
+            <div id="x" class="pad">X</div>
+            <div id="c" class="pad">C</div>
         </div>
         <div class="controls-container">
             <div class="control-power">
                 <label for="switchPower">Power</label>
-                <div class="switch">
-                    <span id="switchPower" class="switch-knob"></span>
+                <div id="switchPower" class="switch">
+                    <span class="switch-knob"></span>
                 </div>
+                <div id="overlayPower" class="switch-overlay"></div>
             </div>
-            <div class="controls-display">
 
+            <div class="sample-display">
+                <span id="sampleDisplay"></span>
             </div>
-            <input type="range" name="" id="">
+            
+            <input type="range" id="volume" min="0" max="100">
             <div class="control-bank">
                 <label for="switchBank">Bank</label>
-                <div class="switch">
-                    <span id="switchBank" class="switch-knob"></span>
+                <div id="switchBank" class="switch">
+                    <span class="switch-knob"></span>
                 </div>
+                <div id="overlayBank" class="switch-overlay"></div>
             </div>
 
         </div>
+    </div>
+
+    <!-- Audio Files -->
+    <div id="audioFiles">
+        <audio name="Cymbal" id="cymbal" src="./sounds/acoustic/CYCdh_ElecK01-Cymbal.wav"></audio>
+        <audio name="Close-Hat" id="clHat" src="./sounds/acoustic/CyCdh_K3ClHat-03.wav"></audio>
+        <audio name="Crash" id="crash" src="./sounds/acoustic/CyCdh_K3Crash-02.wav"></audio>
+        <audio name="High-Hat w/ Foot" id="hfHat" src="./sounds/acoustic/CyCdh_K3HfHat.wav"></audio>
+        <audio name="Kick" id="kick" src="./sounds/acoustic/CyCdh_K3Kick-02.wav"></audio>
+        <audio name="Rim" id="rim" src="./sounds/acoustic/CyCdh_K3Rim-01.wav"></audio>
+        <audio name="SdSt" id="sdst" src="./sounds/acoustic/CyCdh_K3SdSt-06.wav"></audio>
+        <audio name="Tom" id="tom" src="./sounds/acoustic/CyCdh_K3Tom-01.wav"></audio>
+        <audio name="Snare" id="snr" src="./sounds/acoustic/CYCdh_K4-Snr09.wav"></audio>
     </div>
     
     <script src="./index.js"></script>
