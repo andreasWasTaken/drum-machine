@@ -10,7 +10,18 @@ function playAudio(audio) {
 
 
 function displaySampleName(audio) {
-    $sampleDisplay.innerHTML = audio.getAttribute('name')
+    if (switchPower) {
+        $sampleDisplay.innerHTML = audio.getAttribute('name')
+    }
+}
+
+function changePadStyle(index) {
+    $padsContainer.children[index].style.boxShadow = '0px 0px 5px rgba(0, 0, 0, .6)'
+    $padsContainer.children[index].style.background = 'var(--clr-shade-dark)'
+    window.setTimeout(() => {
+        $padsContainer.children[index].style.boxShadow = '4px 4px 5px rgba(0, 0, 0, .6)'
+        $padsContainer.children[index].style.background = 'var(--clr-shade-medium)'
+    }, 200)
 }
 
 const $audioFiles = document.getElementById('audioFiles')
@@ -31,8 +42,12 @@ const keys = ['q', 'w', 'e', 'a', 's', 'd', 'y', 'x', 'c']
 
 for (let i = 0; i < $padsContainer.children.length; i++) {
     $padsContainer.children[i].addEventListener('click', (event) => {
-        const audio = $audioFiles.children[i]
+        changePadStyle(i)
         if(switchPower) {
+            if (switchBank) {
+                i += 9
+            }
+            const audio = $audioFiles.children[i]
             playAudio(audio)
             displaySampleName(audio)
         }
@@ -55,8 +70,15 @@ $overlayBank.addEventListener('click', () => {
 })
 
 document.body.addEventListener('keydown', (event) => {
-    const index = keys.indexOf(event.key)
+    let index = keys.indexOf(event.key)
+
+    changePadStyle(index)
+
+
     if (index !== -1) {
+        if (switchBank) {
+            index += 9
+        }
         const audio = $audioFiles.children[index]
         playAudio(audio)
         displaySampleName(audio)
