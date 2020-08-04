@@ -55,7 +55,7 @@ input[type=range]::-webkit-slider-thumb {
     appearance: none;
     width: 19px;
     height: 19px;
-    background: #4CAF50;
+    background: var(--clr-accent);
     cursor: pointer;
   }
 input[type=range]::-moz-range-thumb {
