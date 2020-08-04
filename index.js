@@ -60,6 +60,9 @@ $overlayPower.addEventListener('click', () => {
         $switchPower.style.justifyContent = 'flex-end' :
         $switchPower.style.justifyContent = 'flex-start'
     
+    if (!switchPower) {
+        $sampleDisplay.textContent = ''
+    }
 })
 
 $overlayBank.addEventListener('click', () => {
