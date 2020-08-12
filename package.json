@@ -1,0 +1,25 @@
+{
+  "name": "drum-machine",
+  "version": "1.2.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreasWasTaken/drum-machine_V1.2.1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreasWasTaken/drum-machine_V1.2.1/issues"
+  },
+  "homepage": "https://github.com/andreasWasTaken/drum-machine_V1.2.1#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" 
+          rel="stylesheet"> 
+    <title>Drum Machine</title>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Drum-Pads -->
+        <div class="pads-container">
+            <div id="q" class="pad">Q</div>
+            <div id="w" class="pad">W</div>
+            <div id="e" class="pad">E</div>
+            <div id="a" class="pad">A</div>
+            <div id="s" class="pad">S</div>
+            <div id="d" class="pad">D</div>
+            <div id="y" class="pad">Y</div>
+            <div id="x" class="pad">X</div>
+            <div id="c" class="pad">C</div>
+        </div>
+        <div class="controls-container">
+            <div class="control-power">
+                <label for="switchPower">Power</label>
+                <div id="switchPower" class="switch">
+                    <span class="switch-knob"></span>
+                </div>
+                <div id="overlayPower" class="switch-overlay"></div>
+            </div>
+
+            <div class="sample-display">
+                <span id="sampleDisplay"></span>
+            </div>
+            
+            <input type="range" id="volume" min="0" max="100">
+            <div class="control-bank">
+                <label for="switchBank">Bank</label>
+                <div id="switchBank" class="switch">
+                    <span class="switch-knob"></span>
+                </div>
+                <div id="overlayBank" class="switch-overlay"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Audio Files -->
+    <div id="audioFiles">
+        <!-- Acoustic Drums -->
+        <audio name="Acoustic Cymbal" src="../sounds/acoustic/CYCdh_ElecK01-Cymbal.wav"></audio>
+        <audio name="Acoustic Close-Hat" src="../sounds/acoustic/CyCdh_K3ClHat-03.wav"></audio>
+        <audio name="Acoustic Crash" src="../sounds/acoustic/CyCdh_K3Crash-02.wav"></audio>
+        <audio name="Acoustic Hh w/ Foot" src="../sounds/acoustic/CyCdh_K3HfHat.wav"></audio>
+        <audio name="Acoustic Kick" src="../sounds/acoustic/CyCdh_K3Kick-02.wav"></audio>
+        <audio name="Acoustic Rim" src="../sounds/acoustic/CyCdh_K3Rim-01.wav"></audio>
+        <audio name="Acoustic SdSt" src="../sounds/acoustic/CyCdh_K3SdSt-06.wav"></audio>
+        <audio name="Acoustic Tom" src="../sounds/acoustic/CyCdh_K3Tom-01.wav"></audio>
+        <audio name="Acoustic Snare" src="../sounds/acoustic/CYCdh_K4-Snr09.wav"></audio>
+        <!-- Electric Drums -->
+        <audio name="Electric Cymbal" src="../sounds/electric/01CYCdh_ElecK04-Cymbal01.wav"></audio>
+        <audio name="Electric Close-Hat" src="../sounds/electric/02CYCdh_ElecK06-ClHat01.wav"></audio>
+        <audio name="Electric Clap" src="../sounds/electric/03CYCdh_ElecK06-Clap02.wav"></audio>
+        <audio name="Electric Hf-Hat w/ Foot" src="../sounds/electric/04CYCdh_ElecK02-HfHat.wav"></audio>
+        <audio name="Electric Kick" src="../sounds/electric/05CYCdh_ElecK03-Kick01.wav"></audio>
+        <audio name="Electric Op-Hat" src="../sounds/electric/06CYCdh_ElecK01-OpHat01.wav"></audio>
+        <audio name="Electric Tom" src="../sounds/electric/07CYCdh_ElecK01-Tom01.wav"></audio>
+        <audio name="Electric SFX" src="../sounds/electric/08CYCdh_ElecK02-FX03.wav"></audio>
+        <audio name="Electric Snare" src="../sounds/electric/09CYCdh_ElecK07-Snr02.wav"></audio>
+    </div>
+    
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
