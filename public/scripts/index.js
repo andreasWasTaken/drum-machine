@@ -1,5 +1,4 @@
 
-
 function playAudio(audio) {
     if (switchPower) {
         audio.currentTime = 0
@@ -7,7 +6,6 @@ function playAudio(audio) {
         audio.play()
     }
 }
-
 
 function displaySampleName(audio) {
     if (switchPower) {

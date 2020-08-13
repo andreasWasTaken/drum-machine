@@ -25,26 +25,30 @@
             <div id="c" class="pad">C</div>
         </div>
         <div class="controls-container">
-            <div class="control-power">
-                <label for="switchPower">Power</label>
-                <div id="switchPower" class="switch">
-                    <span class="switch-knob"></span>
+            <div class="switch-container">
+                <div class="control-power">
+                    <label for="switchPower">Power</label>
+                    <div id="switchPower" class="switch">
+                        <span class="switch-knob"></span>
+                    </div>
+                    <div id="overlayPower"></div>
                 </div>
-                <div id="overlayPower" class="switch-overlay"></div>
+
+                <div class="control-bank">
+                    <label for="switchBank">Change</label>
+                    <div id="switchBank" class="switch">
+                        <span class="switch-knob"></span>
+                    </div>
+                    <div id="overlayBank"></div>
+                </div>
             </div>
 
             <div class="sample-display">
                 <span id="sampleDisplay"></span>
             </div>
             
+            <label for="volume">Volume</label>
             <input type="range" id="volume" min="0" max="100">
-            <div class="control-bank">
-                <label for="switchBank">Bank</label>
-                <div id="switchBank" class="switch">
-                    <span class="switch-knob"></span>
-                </div>
-                <div id="overlayBank" class="switch-overlay"></div>
-            </div>
 
         </div>
     </div>
@@ -52,25 +56,25 @@
     <!-- Audio Files -->
     <div id="audioFiles">
         <!-- Acoustic Drums -->
-        <audio name="Acoustic Cymbal" src="../sounds/acoustic/CYCdh_ElecK01-Cymbal.wav"></audio>
-        <audio name="Acoustic Close-Hat" src="../sounds/acoustic/CyCdh_K3ClHat-03.wav"></audio>
-        <audio name="Acoustic Crash" src="../sounds/acoustic/CyCdh_K3Crash-02.wav"></audio>
-        <audio name="Acoustic Hh w/ Foot" src="../sounds/acoustic/CyCdh_K3HfHat.wav"></audio>
-        <audio name="Acoustic Kick" src="../sounds/acoustic/CyCdh_K3Kick-02.wav"></audio>
-        <audio name="Acoustic Rim" src="../sounds/acoustic/CyCdh_K3Rim-01.wav"></audio>
-        <audio name="Acoustic SdSt" src="../sounds/acoustic/CyCdh_K3SdSt-06.wav"></audio>
-        <audio name="Acoustic Tom" src="../sounds/acoustic/CyCdh_K3Tom-01.wav"></audio>
-        <audio name="Acoustic Snare" src="../sounds/acoustic/CYCdh_K4-Snr09.wav"></audio>
+        <audio name="Cymbal" src="../sounds/acoustic/CYCdh_ElecK01-Cymbal.mp3"></audio>
+        <audio name="Close-Hat" src="../sounds/acoustic/CyCdh_K3ClHat-03.mp3"></audio>
+        <audio name="Crash" src="../sounds/acoustic/CyCdh_K3Crash-02.mp3"></audio>
+        <audio name="Hi-Hat" src="../sounds/acoustic/CyCdh_K3HfHat.mp3"></audio>
+        <audio name="Kick" src="../sounds/acoustic/CyCdh_K3Kick-02.mp3"></audio>
+        <audio name="Rim" src="../sounds/acoustic/CyCdh_K3Rim-01.mp3"></audio>
+        <audio name="???" src="../sounds/acoustic/CyCdh_K3SdSt-06.mp3"></audio>
+        <audio name="Tom" src="../sounds/acoustic/CyCdh_K3Tom-01.mp3"></audio>
+        <audio name="Snare" src="../sounds/acoustic/CYCdh_K4-Snr09.mp3"></audio>
         <!-- Electric Drums -->
-        <audio name="Electric Cymbal" src="../sounds/electric/01CYCdh_ElecK04-Cymbal01.wav"></audio>
-        <audio name="Electric Close-Hat" src="../sounds/electric/02CYCdh_ElecK06-ClHat01.wav"></audio>
-        <audio name="Electric Clap" src="../sounds/electric/03CYCdh_ElecK06-Clap02.wav"></audio>
-        <audio name="Electric Hf-Hat w/ Foot" src="../sounds/electric/04CYCdh_ElecK02-HfHat.wav"></audio>
-        <audio name="Electric Kick" src="../sounds/electric/05CYCdh_ElecK03-Kick01.wav"></audio>
-        <audio name="Electric Op-Hat" src="../sounds/electric/06CYCdh_ElecK01-OpHat01.wav"></audio>
-        <audio name="Electric Tom" src="../sounds/electric/07CYCdh_ElecK01-Tom01.wav"></audio>
-        <audio name="Electric SFX" src="../sounds/electric/08CYCdh_ElecK02-FX03.wav"></audio>
-        <audio name="Electric Snare" src="../sounds/electric/09CYCdh_ElecK07-Snr02.wav"></audio>
+        <audio name="Cymbal" src="../sounds/electric/01CYCdh_ElecK04-Cymbal01.mp3"></audio>
+        <audio name="Close-Hat" src="../sounds/electric/02CYCdh_ElecK06-ClHat01.mp3"></audio>
+        <audio name="Clap" src="../sounds/electric/03CYCdh_ElecK06-Clap02.mp3"></audio>
+        <audio name="???" src="../sounds/electric/04CYCdh_ElecK02-HfHat.mp3"></audio>
+        <audio name="Kick" src="../sounds/electric/05CYCdh_ElecK03-Kick01.mp3"></audio>
+        <audio name="Open-Hat" src="../sounds/electric/06CYCdh_ElecK01-OpHat01.mp3"></audio>
+        <audio name="Tom" src="../sounds/electric/07CYCdh_ElecK01-Tom01.mp3"></audio>
+        <audio name="SFX" src="../sounds/electric/08CYCdh_ElecK02-FX03.mp3"></audio>
+        <audio name="Snare" src="../sounds/electric/09CYCdh_ElecK07-Snr02.mp3"></audio>
     </div>
     
     <script src="./scripts/index.js"></script>

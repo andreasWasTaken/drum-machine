@@ -14,22 +14,22 @@ http.createServer((req, res) => {
     }
     
     const fileExt = path.extname(filePath)
-    let contentType = 'text/html'
+    let options = { 'Content-Type': 'text/html' }
 
     switch (fileExt) {
         case '.css':
-            contentType = 'text/css'
+            options = { 'Content-Type': 'text/css' }
             break
         case '.js':
-            contentType = 'text/javascript'
+            options = { 'Content-Type': 'text/javascript' }
             break
         case '.wav':
-            contentType = 'audio/wav'
+            options = { 'Content-Type': 'audio/mp3', }
             break
     }
 
     fs.readFile(filePath, (err, content) => {
-        res.writeHead(200, {'Content-Type': contentType})
+        res.writeHead(200, options)
         res.end(content)
     })
 
